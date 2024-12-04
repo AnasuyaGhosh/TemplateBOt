@@ -21,7 +21,7 @@ public class Main {
                 Movie[] romance = {new Movie("La La Land", "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.", "PG-13", 2016),
                                     new Movie("Love Actually", "Love Actually follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.", "R", 2003),
                                     new Movie("The Fault in Our Stars", "Two teenagers, Hazel and Gus, meet at a cancer support group and fall in love.", "PG-13", 2014)};
-                String[] hehes = {"Tell me a movie that you watched recently and liked", "What are your hobbies", "What's your favorite color", "What's your favorite TV show", ""};
+                String[] hehes = {"Tell me a movie that you watched recently and liked", "What are your interests", "What's your favorite movie", "What's your favorite TV show", ""};
 
 
                 System.out.println("\n");
@@ -36,14 +36,14 @@ public class Main {
 
                 outerloop:
                 while(true) {
-
-                    System.out.println("Let's choose a new movie! Tell me what genre you like. Here are a few suggestions: Horror, Action, Comedy, Romance");
-                    input = in.nextLine().toLowerCase();
-                    System.out.println("\n");
                     val = (int) (Math.random() * 3);
                     System.out.println(hehes[val]);
                     tempinp = in.nextLine().toLowerCase();
                     System.out.println("\n");
+                    System.out.println("Tell me what genre you like. Here are a few suggestions: Horror, Action, Comedy, Romance");
+                    input = in.nextLine().toLowerCase();
+                    System.out.println("\n");
+                    
                     
                     
 
@@ -57,6 +57,7 @@ public class Main {
                             System.out.println("");
                             
                             if (input.contains("different")) {
+                                System.out.println("Let's choose a new movie");
                                 System.out.println("\n");
                                 break;
                             } else if (input.contains("details")) {
@@ -82,6 +83,7 @@ public class Main {
                             System.out.println("");
                             
                             if (input.contains("different")) {
+                                System.out.println("Let's choose a new movie");
                                 System.out.println("\n");
                                 break;
                             } else if (input.contains("details")) {
@@ -107,6 +109,7 @@ public class Main {
                             System.out.println("");
                             
                             if (input.contains("different")) {
+                                System.out.println("Let's choose a new movie");
                                 System.out.println("\n");
                                 break;
                             } else if (input.contains("details")) {
@@ -132,6 +135,7 @@ public class Main {
                             System.out.println("");
                             
                             if (input.contains("different")) {
+                                System.out.println("Let's choose a new movie");
                                 System.out.println("\n");
                                 break;
                             } else if (input.contains("details")) {
